@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双城天气对比</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="输入两个城市，对比实时天气并生成中文概述">
+    <meta name="keywords" content="天气, 高德, 城市对比, Flask">
+    <meta name="author" content="Weather-2">
+</head>
+<body>
+    <header>
+        <h1>双城天气对比</h1>
+    </header>
+
+    <div class="input-container">
+        <input class="city-input" type="text" id="city1" placeholder="请输入第一个城市，例如：北京">
+        <input class="city-input" type="text" id="city2" placeholder="请输入第二个城市，例如：上海">
+    </div>
+    <button class="compare-btn" id="compare-btn">开始对比</button>
+
+    <section class="weather-container">
+        <div class="weather-card" id="city1-weather">
+            <h2>城市一</h2>
+            <div class="weather-info"></div>
+        </div>
+        <div class="weather-card" id="city2-weather">
+            <h2>城市二</h2>
+            <div class="weather-info"></div>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <h2>天气对比概述</h2>
+        <p id="summary-text"></p>
+        <div id="comparison-result"></div>
+    </section>
+
+    <script src="/static/js/app.js"></script>
+    
+</body>
+</html>
