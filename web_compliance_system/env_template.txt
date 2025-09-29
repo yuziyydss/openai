@@ -1,0 +1,15 @@
+# Spes合规审查系统 - 环境变量配置
+# 请将以下值替换为你的实际API密钥
+
+# OpenAI API配置
+OPENAI_API_KEY=你的OpenAI_API密钥
+
+# SiliconFlow API配置（用于图片OCR）
+SILICONFLOW_API_KEY=你的SiliconFlow_API密钥
+SILICONFLOW_BASE_URL=https://api.siliconflow.cn/v1
+
+# 使用说明：
+# 1. 复制此文件为 .env
+# 2. 替换上面的API密钥为你的实际密钥
+# 3. 保存文件
+# 4. 运行 python app.py 启动Web系统
